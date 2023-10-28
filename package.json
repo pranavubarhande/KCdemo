@@ -22,6 +22,7 @@
     "react-is": "^16.8.0",
     "react-native": "0.71.14",
     "react-native-appearance": "0.3.4",
+    "react-native-big-list": "^1.6.0",
     "react-native-elements": "^3.4.2",
     "react-native-gesture-handler": "~2.9.0",
     "react-native-paper": "4.9.2",

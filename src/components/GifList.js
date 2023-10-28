@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import { FlatList, View } from 'react-native';
 import GifItem from './GifItem';
-
+import BigList from "react-native-big-list";
 const GifList = ({ gifs, onGifPress, onEndReached, itemsPerPage }) => {
   const numColumns = 2;
 
@@ -32,14 +32,13 @@ const GifList = ({ gifs, onGifPress, onEndReached, itemsPerPage }) => {
   };
 
   return (
-    <FlatList
-      data={formattedData} //reduced data here using last two props which removes top and bottom data which is not necessary
+    <BigList
+      data={gifs} 
       keyExtractor={(item) => item.id}
-      numColumns={numColumns}
       renderItem={renderGifItem}
-      removeClippedSubviews={true}
-      maxToRenderPerBatch={5}
-      initialNumToRender={5} 
+      itemHeight={260}
+      numColumns={2}
+          
     />
   );
 };

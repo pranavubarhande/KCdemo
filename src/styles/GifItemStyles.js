@@ -2,8 +2,8 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   container: {
-    margin: '2.5%',
-    width: '45%',
+    margin: '5%',
+    width: '90%',
     borderRadius: 20,
     borderWidth: 1,
     paddingBottom: 5,
@@ -22,6 +22,6 @@ export default StyleSheet.create({
   iconContainer: {
     flexDirection: 'row',
     justifyContent: 'space-evenly',
-    marginTop: 5,
+    marginVertical: 5,
   },
 });
