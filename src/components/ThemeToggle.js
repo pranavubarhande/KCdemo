@@ -2,8 +2,7 @@ import React from 'react'
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
 import { useSelector, useDispatch } from "react-redux";
 import { invert } from '../store/reducers/darkmode'
-const ThemeToggle = ({ toggleTheme }) => {
-  // const { isDarkModeOn, toggleDarkMode } = useGlobal()
+const ThemeToggle = () => {
   const isDarkModeOn= useSelector((state) => state.darkmode);
   const dispatch = useDispatch();
   return (

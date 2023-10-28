@@ -9,9 +9,6 @@ import { Provider } from "react-redux";
 import store from './src/store/store.js'
 const Tab = createBottomTabNavigator();
 const App = () => {
-  
-  
-
   return (
     <Provider store={store}>
       <NavigationContainer >
